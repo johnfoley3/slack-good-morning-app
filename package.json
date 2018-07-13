@@ -1,0 +1,23 @@
+{
+  "name": "slack-good-morning-app",
+  "version": "1.0.0",
+  "description": "Simple Slack app to say good morning for me",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/johnfoley3/slack-good-morning-app.git"
+  },
+  "keywords": [
+    "slack",
+    "basic"
+  ],
+  "author": "John Foley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnfoley3/slack-good-morning-app/issues"
+  },
+  "homepage": "https://github.com/johnfoley3/slack-good-morning-app#readme"
+}
