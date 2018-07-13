@@ -6,6 +6,14 @@ const general = config.get("slack.channels.general");
 
 const web = new WebClient(token);
 
+// generate 'good morning' with somewhere between 2 and 8 'o's
+function funGoodMorning() {
+  // 2-8 o's
+  let num_os = Math.floor(Math.random() * 8) + 2;
+
+  return `G${new Array(num_os + 1).join('o')}d morning!`;
+}
+
 function say(words, conversationId) {
   web.chat.postMessage({ channel: conversationId, text: words, as_user: true })
     .then((res) => {
@@ -23,4 +31,4 @@ function listChannels() {
 }
 
 // listChannels();
-say("What's up?", general);
+say(funGoodMorning(), general);
